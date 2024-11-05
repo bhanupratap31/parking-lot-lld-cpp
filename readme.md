@@ -1,9 +1,8 @@
-<Bold>The design of parking lot includes below given features:
+The design of parking lot includes below given features:
 
 - The parking lot system should be able to park bikes, cars, and trucks vehicles.
 - The system should be able to keep track of the time a vehicle is parked.
 - The system should be able to calculate the cost of parking of each type of vehicles.
-- The system should be able to calculate number of hours a vehicles has been parked.
 - The system should be able to remove a vehicle from the parking spots.
 - The system will work on first come first serve basis.
 

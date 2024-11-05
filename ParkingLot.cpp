@@ -31,4 +31,42 @@ public:
             return false;
         }
     }
+
+    bool Leave(Vehicle *vehicle)
+    {
+        for (int i = 0; i < floors; i++)
+        {
+            for (int j = 0; j < rows; j++)
+            {
+                string numberPlate = vehicle->getNumberPlate();
+                if (spots[i][j].find(numberPlate) != spots[i][j].end())
+                {
+                    spots[i][j].erase(numberPlate);
+                    cout << vehicle->getType() << " left successfully. " << endl;
+                    return true;
+                }
+            }
+        }
+        cout << vehicle->getType() << " not found" << endl;
+        return false;
+    }
+
+    int availableSpots(int floor)
+    {
+        int count = 0;
+        for (int r = 0; r < rows; r++)
+        {
+            count += spotsPerRow - (int)spots[floor][r].size();
+        }
+        return count;
+    }
+
+    void Clear()
+    {
+        for (auto &outer : spots)
+        {
+            outer.second.clear();
+        }
+        spots.clear();
+    }
 };

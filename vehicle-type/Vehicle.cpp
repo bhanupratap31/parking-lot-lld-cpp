@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include "VehicleType.cpp"
+#include "Bike.cpp"
+#include "Car.cpp"
+#include "Truck.cpp"
 
 using namespace std;
 

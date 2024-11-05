@@ -1,11 +1,11 @@
-The design of parking lot includes below given features:
+<Bold>The design of parking lot includes below given features:
 
-- The parking lot should have multiple levels, each level with a certain number of parking spots.
-- The parking lot should support different types of vehicles, such as cars, motorcycles, and trucks.
-- Each parking spot should be able to accommodate a specific type of vehicle.
-- The system should assign a parking spot to a vehicle upon entry and release it when the vehicle exits.
-- The system should track the availability of parking spots and provide real-time information to customers.
-- The system should handle multiple entry and exit points and support concurrent access.
+- The parking lot system should be able to park bikes, cars, and trucks vehicles.
+- The system should be able to keep track of the time a vehicle is parked.
+- The system should be able to calculate the cost of parking of each type of vehicles.
+- The system should be able to calculate number of hours a vehicles has been parked.
+- The system should be able to remove a vehicle from the parking spots.
+- The system will work on first come first serve basis.
 
 Classes, Interfaces and Enumerations
 
